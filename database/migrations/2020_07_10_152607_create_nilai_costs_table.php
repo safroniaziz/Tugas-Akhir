@@ -15,7 +15,7 @@ class CreateNilaiCostsTable extends Migration
     {
         Schema::create('nilai_costs', function (Blueprint $table) {
             $table->id();
-            $table->string('iterasi_ke');
+            $table->bigInteger('iterasi_ke');
             $table->float('nilai_cost');
             $table->timestamps();
         });

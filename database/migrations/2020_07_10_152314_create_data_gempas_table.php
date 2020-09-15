@@ -18,10 +18,10 @@ class CreateDataGempasTable extends Migration
             $table->string('tahun');
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->double('kedalaman')->nullable();
-            $table->double('kekuatan')->nullable();
-            $table->double('kedalaman_error')->nullable();
-            $table->double('kekuatan_error')->nullable();
+            $table->string('kedalaman')->nullable();
+            $table->string('kekuatan')->nullable();
+            $table->string('lokasi');
+            $table->string('waktu_detail');
             $table->timestamps();
         });
     }

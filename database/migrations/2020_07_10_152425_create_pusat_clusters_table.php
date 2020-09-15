@@ -15,7 +15,7 @@ class CreatePusatClustersTable extends Migration
     {
         Schema::create('pusat_clusters', function (Blueprint $table) {
             $table->id();
-            $table->string('iterasi_ke');
+            $table->bigInteger('iterasi_ke');
             $table->string('cluster_ke');
             $table->unsignedInteger('data_gempa_id');
             $table->timestamps();

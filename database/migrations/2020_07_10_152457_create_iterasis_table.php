@@ -21,7 +21,7 @@ class CreateIterasisTable extends Migration
             $table->float('nilai_cluster_3')->nullable();
             $table->float('nilai_min')->nullable();
             $table->string('kelompok_cluster')->nullable();
-            $table->string('iterasi_ke')->nullable();
+            $table->bigInteger('iterasi_ke')->nullable();
             $table->timestamps();
         });
     }
